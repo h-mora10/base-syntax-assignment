@@ -15,10 +15,19 @@ class App extends Component {
   };
 
   render() {
+    const userInputStyle = {
+      backgroundColor: 'white',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    }
+
     return (
       <div className="App">
         <h1>Base Syntax Assignment</h1>
         <UserInput
+          style={userInputStyle}
           username={this.state.username}
           changed={this.usernameChangeHandler}
         />
